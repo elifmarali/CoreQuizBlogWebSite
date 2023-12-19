@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
+
+body {
+    background-color: #F0ECE5;
+    margin: 20px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+}
+
+/* header başlandı */
+.header {
+    display: flex;
+    background-color: #161A30;
+    color: #F0ECE5;
+    height: 11.5vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 300px;
+    width: 50vw;
+}
+
+.navbarItem {
+    color: #F0ECE5;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+    transition: 300ms all;
+    width: calc(50vw / 4);
+}
+
+.navbarItem:hover {
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.navbarItem a:hover {
+    color: #fff;
+    font-size: 22px;
+}
+
+
+.subNavbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #161A30;
+    border-radius: 5px;
+    list-style: none;
+    width: 150px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.subNavbar a {
+    padding: 4px;
+}
+
+.subNavbar a:hover {
+    background-color: #F0ECE5;
+    color: #161A30;
+}
+
+.navbarItem:hover .subNavbar {
+    display: block;
+}
+
+.navbarItem a {
+    color: #F0ECE5;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 300ms all;
+}
+
+/* header bbitirildi */
+
+/*ana sayfadaki section başlandı */
+.section {
+    height: 84vh;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid lightgray;
+    background-color: #161A30;
+    color: #fff;
+}
+
+.section .leftSection {
+    font-size: 55px;
+    font-weight: 800;
+    margin: 90px;
+    position: relative;
+
+}
+
+.section .leftSection .leftSectionPrg {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(146, 146, 146);
+    bottom: 0px;
+}
+
+.section .rightSection img {
+    height: 84vh;
+}
+
+/*ana sayfadaki section bitirildi */
+
+
+/*ana sayfadaki main başlandı */
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #31304D;
+    color: #B6BBC4;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.mainHeader {
+    font-size: 40px;
+    padding: 40px;
+}
+
+.main .carts {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 25%;
+    padding: 0 60px;
+}
+
+.main .carts .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background-color: #F0ECE5;
+    color: #161A30;
+    height: 50vh;
+    border-radius: 10px;
+    width: 26vw;
+}
+
+.cardİmg {
+    margin-bottom: 80px;
+}
+
+.cart .cardHeader {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cart .cardDescription {
+    font-size: 16px;
+    color: #84878e;
+}
+
+/*ana sayfadaki main bitirildi */
+
+/* footer başlandı*/
+.footer {
+    display: flex;
+    position: relative;
+    height: 17vh;
+    background-color: #161A30;
+    justify-content: start;
+    align-items: center;
+}
+
+.footerList {
+    display: flex;
+    gap: 20px;
+}
+
+.footerItem {
+    list-style: none;
+}
+
+.footerItem a {
+    text-decoration: none;
+    color: rgba(211, 211, 211, 0.5);
+    font-size: 18px;
+    font-weight: 100;
+    transition: 300ms all;
+}
+
+.footerItem a:hover {
+    color: #fff;
+}
+
+.socialMedia {
+    position: absolute;
+    top: 50%;
+    right: -10vw;
+    transform: translate(-50%, -50%);
+}
+
+.socialMedia div {
+    display: inline-flex;
+}
+
+.socialMedia div a {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: #B6BBC4;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.socialMedia div a i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.socialMedia .facebook a:hover {
+    background: #4267b2;
+}
+
+.socialMedia .twitter a:hover {
+    background: #1da1f2;
+}
+
+.socialMedia .google a:hover {
+    background: #d34c3d;
+}
+
+
+.socialMedia .instagram a:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.socialMedia .youtube a:hover {
+    background: #fe0000;
+}
+
+
+.socialMedia a:hover i {
+    transform: scale(1.1) rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* footer bitirildi*/
+
+/* teknoloji */
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.mainCard {
+    background-color: #31304D;
+    border-radius: 20px;
+    padding: 20px;
+    color: #B6BBC4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainCardHeader {
+    color: #52aaeb;
+}
+
+
+.mainCard p {
+    font-size: 15px;
+}
+
+.mainCardRight {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCardRight ul {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.mainCardImage {
+    height: 30vh;
+    border-radius: 20px;
+    width: 30vw;
+}
+
+.link {
+    color: #cc2366;
+}
+
+.mainLowerSection {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+}
+
+.seriesCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.seriesCard {
+    width: 26vw;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    height: 70vh
+}
+
+.seriesHeader {
+    color: #fff;
+    font-size: 20px;
+}
+
+.aboutContainer .mainCard {
+    padding: 45px;
+}
+
+.aboutContainer .mainCardHeader {
+    margin: 5px;
+}
+
+.aboutContainer p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.aboutContainer h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    /* Eklenen satır: Etiket ve giriş alanlarını sola hizala */
+}
+
+.formElementLabel {
+    margin-bottom: 8px;
+}
+
+.formElementInput,
+.formElementArea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 30vw;
+    /* Eklenen satır: Giriş alanını genişliği kadar genişlet */
+}
+
+.submitButton {
+    background-color: #52aaeb;
+    color: #fff;
+    border: 1px solid #53aaeb;
+    border-radius: 10px;
+    width: 24vw;
+    padding: 20px;
+    font-size: 20px;
+    transition: 300ms all;
+}
+
+.submitButton:hover {
+    background-color: #161A30;
+
+}
