@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ana Sayfa</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon-32x32.png" type="image/x-icon" />
     <!-- Css Linki -->
     <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome Linki-->
@@ -15,6 +17,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -40,6 +54,7 @@
           </li>
           <li class="navbarItem"><a href="hakkimizda.html">Hakkımızda</a></li>
           <li class="navbarItem"><a href="iletişim.html">İletişim</a></li>
+          <li class="navbarItem"><a href="weather.html">Hava Durumu</a></li>
         </ul>
       </div>
       <div class="section">
@@ -57,6 +72,8 @@
       <div class="main">
         <h2 class="mainHeader">İşlevlerimiz!</h2>
         <div class="carts">
+          <button class="slickPrev" onclick="plusDivs(-1)">&#10094;</button>
+
           <div class="cart">
             <div class="cardİmg">
               <img
@@ -104,6 +121,7 @@
               Öğrenme Platformları...
             </p>
           </div>
+          <button class="slickNext" onclick="plusDivs(+1)">&#10095;</button>
         </div>
       </div>
       <div class="footer">
@@ -140,5 +158,28 @@
         </div>
       </div>
     </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("cart");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].classList.remove("active"); // Remove active class from all carts
+        }
+        x[slideIndex - 1].classList.add("active"); // Add active class to the current cart
+      }
+    </script>
   </body>
 </html>

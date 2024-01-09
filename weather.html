@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hakkımızda</title>
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon -->
     <link rel="icon" href="./favicon-32x32.png" type="image/x-icon" />
-    <!-- Css Linki -->
-    <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome Linki-->
     <link
       rel="stylesheet"
@@ -19,12 +17,12 @@
     />
   </head>
   <body>
-    <div class="container aboutContainer">
+    <div class="container">
       <div class="header">
         <a href="index.html">
           <img
             src="./images/logo.jpeg"
-            alt="logo gorseli"
+            alt="coreQuiz logo gorseli"
             width="90"
             height="90"
           />
@@ -45,46 +43,16 @@
           <li class="navbarItem"><a href="weather.html">Hava Durumu</a></li>
         </ul>
       </div>
-      <h1 class="head">Hakkımızda</h1>
-      <div class="mainCard">
-        <h2 class="mainCardHeader">Core Quiz Blog, 2023</h2>
-        <p>
-          Merhaba! Biz <b>Core Quiz Blog</b> ekibi olarak sizlere hoş geldiniz
-          diyoruz. Core Quiz Blog, bilgiye aç bir zihin için tasarlanmış bir
-          platformdur. Amacımız, kullanıcılarımıza çeşitli konularda eğitici,
-          ilgi çekici ve eğlenceli içerikler sunmaktır. Core Quiz Blog, bilgi
-          dünyasına olan katkılarıyla ön plana çıkmayı hedeflemektedir.
-        </p>
-        <h3>Proje Amacı:</h3>
-        <p>
-          Core Quiz Blog, herkesin kolayca erişebileceği, anlaşılır ve öğretici
-          içerikler sunmayı amaçlamaktadır. Bilgiyi paylaşma ve öğrenme sürecini
-          daha eğlenceli kılarak, kullanıcılarımızın merakını gidermek ve bilgi
-          düzeylerini artırmak temel hedeflerimiz arasındadır.
-        </p>
-        <h3>Vizyonumuz:</h3>
-        <p>
-          Vizyonumuz, Core Quiz Blog'un bilgi dünyasındaki etkisini
-          genişleterek, farklı kategorilerdeki içeriklerle zenginleştirmektir.
-          Her geçen gün daha fazla insanın Core Quiz Blog'u tercih etmesi ve
-          bilgiye ulaşmanın keyfini çıkarması, projemizin temel vizyonunu
-          oluşturmaktadır.
-        </p>
-        <p>
-          Core Quiz Blog ekibi olarak, kaliteli içerik üretme konusundaki
-          kararlılığımızı sürdürüyoruz. Bilgi paylaşımında güvenilir bir kaynak
-          olmayı hedefleyerek, kullanıcılarımıza en iyi deneyimi sunma
-          amacındayız.
-        </p>
-        <i
-          >Siz de Core Quiz Blog ailesine katılarak, bilgi dünyasına birlikte
-          yön verelim. Sorularınız, önerileriniz ve geri bildirimlerinizle bize
-          katkıda bulunmaktan memnuniyet duyarız.</i
-        >
-        <p>
-          Teşekkür ederiz, <br />
-          Core Quiz Blog Ekibi
-        </p>
+
+      <div class="weatherInput">
+        <input type="text" id="searchBar" placeholder="Konumu Giriniz." />
+      </div>
+
+      <div class="weatherContent">
+        <div class="city">Şehir</div>
+        <div class="temp">Mevcut Sıcaklık</div>
+        <div class="desc">Hava Durumu</div>
+        <div class="minMax">Minimum - Maximum Sıcaklık</div>
       </div>
       <div class="footer">
         <ul class="footerList">
@@ -120,5 +88,6 @@
         </div>
       </div>
     </div>
+    <script src="api.js"></script>
   </body>
 </html>
